@@ -1,0 +1,255 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding-top: 30px;
+  width: 25%; 
+  margin-left: 5%;
+}
+.avatar {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.name {
+color:#0e0e0e;
+font-weight: bold;
+font-size: 24px;
+}
+
+.tag,
+.location {
+  margin-bottom: 10px;
+  color: #878585;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:30px;
+  padding: 20px 0;
+  list-style: none;
+  background-color: #f6f4f4;
+  width: 100%;
+  margin:0;
+ vertical-align: bottom;
+ border-radius: 8px;
+ border: 1px solid rgba(0, 0, 0, 0.2);
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stats-item{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+position: relative;
+}
+
+.stats-item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -16px; 
+  height: 100%;
+  width: 1px; 
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1; 
+}
+
+.stats-item:last-child::after {
+  content: none;
+}
+
+.label {
+  color: #817f7f;
+}
+
+.quantity {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}
+
+.statistics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 16vh;
+  width: 19%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 36%;
+  margin-top: -10%;
+}
+
+.title {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px 8px 0 0; 
+}
+
+.stat-list {
+  display: flex;
+  flex-direction: row; 
+  list-style: none;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  text-align: center;
+}
+
+.item:nth-child(1) {
+  background-color: rgb(0, 213, 255);
+  color: #fff;
+}
+
+.item:nth-child(2) {
+  background-color: rgb(213, 130, 238);
+  color: #fff;
+}
+
+.item:nth-child(3) {
+  background-color: rgb(253, 54, 54);
+  color: #fff;
+}
+
+.item:nth-child(4) {
+  background-color: rgb(13, 183, 13);
+  color: #fff;
+}
+
+.item:nth-child(5) {
+  background-color: rgb(148, 136, 6);
+  color: #fff;
+}
+
+.item .label {
+  color: #fff;
+  font-size: 14px;
+}
+
+.item .percentage {
+  font-size: 16px;
+}
+
+.friend-list {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  gap: 30px;
+  list-style: none;
+  padding:0px;
+  margin-top: 30px;
+}
+
+.friend-item {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  padding: 20px 0px 20px 30px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.friend-list .item:hover {
+  background-color: #f5f5f5;
+}
+
+.friend-list .status {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.friend-list .online {
+  background-color: #4caf50;
+}
+
+.friend-list .offline {
+  background-color: #eb0d0d;
+}
+
+.friend-list .avatar {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  margin-right: 15px;
+}
+
+.friend-list .name {
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+  font-size: 20px;
+}
+
+.transaction-history {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.transaction-history th,
+.transaction-history td {
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+  text-align: center;
+}
+
+.transaction-history th {
+  background-color: #52c4f4;
+  font-weight: bold;
+  color: #e6eaec;
+}
+
+.transaction-history td {
+  color: #555;
+}
+
+.transaction-history tr:nth-child(even) td {
+  background-color: #f5f5f5;
+}
+
+.transaction-history tr:hover td {
+  background-color: #ddd;
+}
